@@ -4,7 +4,7 @@
 int glob = 5;
 
 char waterBubble(int d);
-
+void printer(char p);
 int main(int argc, char *argv[])
 {
 	char D = 'u';
@@ -15,6 +15,6 @@ int main(int argc, char *argv[])
 		int user = strtol (argv[1],0,0);
 		D = waterBubble(user);
 	}
-	printf("\n\tThe direction of water bubble is %c\n",D);
+	printer(D);
 
 }
